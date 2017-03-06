@@ -23,7 +23,7 @@ console.log (url);
 function handler(result) {
 
     for(var i=0;i<result.length;i++) {
-        $("#songs").append("<tr><td><a href='http://www.songsterr.com/a/wa/song?id='>" + result[i].title + "</a></td><td>" + result[i].id  + "</td></tr>");
+        $("#songs").append("<tr><td><a href='http://www.songsterr.com/a/wa/song?id="+ result[i].id + "'>" + result[i].title + "</a></td><td>" + result[i].id  + "</td></tr>");
     }
 
 }
